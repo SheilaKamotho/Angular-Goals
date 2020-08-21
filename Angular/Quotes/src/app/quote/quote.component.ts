@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Quote } from '../quote';
 
 @Component({
@@ -9,7 +10,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1, quote:'Worrying means suffering twice'},
+    {id:1, quote:'Worrying means suffering twice', author:'J.K Rowling',submittedBy:'Sheila Kamotho'},
   
   ];
 
