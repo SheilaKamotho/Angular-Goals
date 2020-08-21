@@ -10,9 +10,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1, quote:'Worrying means suffering twice', author:'J.K Rowling',submittedBy:'Sheila Kamotho'},
+    new Quote(1, 'Worrying means you suffer twice', 'J.K Rowling', 'Sheila Kamotho'),
   
   ];
+  toggleDetails(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
 
   constructor() { }
 
