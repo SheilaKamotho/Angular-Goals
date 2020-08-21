@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1, quote:'Worrying means suffering twice', author:'J.K Rowling',submittedBy:'Sheila Kamotho'},
+    {id:1, quote:'Worrying means suffering twice'},
   
   ];
 
