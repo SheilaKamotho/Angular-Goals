@@ -13,17 +13,15 @@
     <div class="form-group">
   
       <label for="author">Author</label><br>
-      <input type="text" required class="form-control" id="author"[(ngModel)]="newQuote.author" name="author" #author='ngModel' required >
-      <div [hidden]="author.valid || author.pristine" class="alert alert-danger"></div>
-      <p>Author is required</p>
+      <input type="text" required class="form-control" id="author" >
+     
     </div>
 
     <div class="form-group">
   
       <label for="submittedBy">Submitted By</label><br>
-      <input type="text" required class="form-control" id="submittedBy"[(ngModel)]="newQuote.submittedBy" name="submittedBy" #submittedBy='ngModel' required>
-      <div [hidden]="submittedBy.valid || submittedBy.pristine" class="alert alert-danger"></div>
-      <p>Your name is required</p>
+      <input type="text" required class="form-control" id="submittedBy">
+  
     </div>
 
     <div class="form-group">
